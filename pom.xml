@@ -91,6 +91,7 @@
         <netty.version>4.1.5.Final</netty.version>
         <jmail.version>1.4.7</jmail.version>
         <redisson.version>3.2.3</redisson.version>
+        <poi.version>3.17</poi.version>
         <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
@@ -118,8 +119,6 @@
                 <artifactId>socket-common</artifactId>
                 <version>${socket-common.version}</version>
             </dependency>
-
-
             <!--mybatis-->
             <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
             <dependency>
@@ -188,6 +187,18 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson</artifactId>
                 <version>${redisson.version}</version>
+            </dependency>
+            <!-- poi -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <!-- poi -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
             </dependency>
 
             <!--spring-boot依赖管理-->

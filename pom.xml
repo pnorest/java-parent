@@ -7,6 +7,7 @@
     <groupId>com.github.JoeKerouac</groupId>
     <artifactId>java-parent</artifactId>
     <version>1.0</version>
+    <name>parent</name>
     <packaging>pom</packaging>
     <description>所有java-maven项目的父项目，并且引入spring-boot依赖管理</description>
     <url>https://github.com/JoeKerouac/java-parent</url>

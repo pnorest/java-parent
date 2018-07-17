@@ -79,7 +79,7 @@
         <java.version>1.8</java.version>
         <encode>UTF8</encode>
         <net.version>1.5.002</net.version>
-        <utils.version>1.8.010</utils.version>
+        <utils.version>1.9.000</utils.version>
         <socket.version>1.1</socket.version>
         <mybatis.version>3.4.5</mybatis.version>
         <mybatis-spring.version>1.3.2</mybatis-spring.version>

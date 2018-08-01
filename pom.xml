@@ -6,7 +6,7 @@
 
     <groupId>com.github.JoeKerouac</groupId>
     <artifactId>java-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>parent</name>
     <packaging>pom</packaging>
     <description>所有java-maven项目的父项目，并且引入spring-boot依赖管理</description>
@@ -33,6 +33,43 @@
     </developers>
 
     <profiles>
+        <profile>
+            <!--打包源码和javadoc-->
+            <id>javadoc</id>
+            <build>
+                <plugins>
+                    <!-- Source -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Javadoc -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <encoding>${encode}</encoding>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>local</id>
             <distributionManagement>

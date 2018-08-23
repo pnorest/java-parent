@@ -115,6 +115,7 @@
     <properties>
         <java.version>1.8</java.version>
         <encode>UTF8</encode>
+        <web-util.version>1.0</web-util.version>
         <net.version>1.7.000</net.version>
         <utils.version>1.10.004</utils.version>
         <socket.version>1.1</socket.version>
@@ -139,6 +140,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.github.JoeKerouac</groupId>
+                <artifactId>web-util</artifactId>
+                <version>${web-util.version}</version>
+            </dependency>
             <!--net-->
             <dependency>
                 <groupId>com.github.JoeKerouac</groupId>

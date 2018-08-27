@@ -6,7 +6,7 @@
 
     <groupId>com.github.JoeKerouac</groupId>
     <artifactId>java-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <name>parent</name>
     <packaging>pom</packaging>
     <description>所有java-maven项目的父项目，并且引入spring-boot依赖管理</description>
@@ -115,10 +115,11 @@
     <properties>
         <java.version>1.8</java.version>
         <encode>UTF8</encode>
-        <web-util.version>1.0</web-util.version>
-        <net.version>1.7.000</net.version>
-        <utils.version>1.10.004</utils.version>
-        <socket.version>1.1</socket.version>
+        <web-util.version>1.1.0</web-util.version>
+        <net.version>1.8.000</net.version>
+        <utils.version>1.11.000</utils.version>
+        <socket.version>1.2.0</socket.version>
+        <spider-util.version>1.1.0</spider-util.version>
         <mybatis.version>3.4.5</mybatis.version>
         <mybatis-spring.version>1.3.2</mybatis-spring.version>
         <druid.version>1.1.6</druid.version>
@@ -142,6 +143,12 @@
         <dependencies>
             <dependency>
                 <groupId>com.github.JoeKerouac</groupId>
+                <artifactId>spider-util</artifactId>
+                <version>${spider-util.version}</version>
+            </dependency>
+            <!--web-util-->
+            <dependency>
+                <groupId>com.github.JoeKerouac</groupId>
                 <artifactId>web-util</artifactId>
                 <version>${web-util.version}</version>
             </dependency>
@@ -163,11 +170,13 @@
                 <artifactId>socket-common</artifactId>
                 <version>${socket.version}</version>
             </dependency>
+            <!--backserver-->
             <dependency>
                 <groupId>com.github.JoeKerouac</groupId>
                 <artifactId>socket-backserver</artifactId>
                 <version>${socket.version}</version>
             </dependency>
+            <!--balance-->
             <dependency>
                 <groupId>com.github.JoeKerouac</groupId>
                 <artifactId>socket-balance</artifactId>

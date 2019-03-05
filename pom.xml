@@ -133,6 +133,8 @@
         <redisson.version>3.2.3</redisson.version>
         <poi.version>3.17</poi.version>
         <xmlbeans.version>3.0.2</xmlbeans.version>
+        <asm.version>5.0.3</asm.version>
+        <commons.lang.version>3.8.1</commons.lang.version>
         <byte-buddy.version>1.9.3</byte-buddy.version>
         <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
@@ -276,6 +278,18 @@
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
                 <version>${byte-buddy.version}</version>
+            </dependency>
+            <!-- asm依赖包 -->
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>${asm.version}</version>
+            </dependency>
+            <!-- 常用工具包 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang.version}</version>
             </dependency>
 
             <!--spring-boot依赖管理-->

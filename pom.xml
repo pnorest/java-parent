@@ -136,6 +136,7 @@
         <asm.version>5.0.3</asm.version>
         <commons.lang.version>3.8.1</commons.lang.version>
         <byte-buddy.version>1.9.3</byte-buddy.version>
+        <jacoco.version>0.8.4</jacoco.version>
         <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
@@ -290,6 +291,13 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons.lang.version}</version>
+            </dependency>
+
+            <!-- 覆盖率统计 -->
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}}</version>
             </dependency>
 
             <!--spring-boot依赖管理-->

@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.JoeKerouac</groupId>
+    <groupId>com.github.pnorest</groupId>
     <artifactId>java-parent</artifactId>
     <version>1.1.0</version>
     <name>parent</name>
     <packaging>pom</packaging>
     <description>所有java-maven项目的父项目，并且引入spring-boot依赖管理</description>
-    <url>https://github.com/JoeKerouac/java-parent</url>
+    <url>https://github.com/pnorest/java-parent</url>
 
     <licenses>
         <license>
@@ -20,9 +20,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git@github.com:JoeKerouac/java-parent.git</connection>
-        <developerConnection>scm:git@github.com:JoeKerouac/java-parent.git</developerConnection>
-        <url>https://github.com/JoeKerouac/java-parent</url>
+        <connection>scm:git@github.com:pnorest/java-parent.git</connection>
+        <developerConnection>scm:git@github.com:pnorest/java-parent.git</developerConnection>
+        <url>https://github.com/pnorest/java-parent</url>
     </scm>
 
     <developers>
